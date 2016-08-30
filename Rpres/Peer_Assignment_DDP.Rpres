@@ -1,0 +1,40 @@
+Developing Data Products - Peer Graded Assignment
+========================================================
+author: soniampub
+date: `r date()`
+autosize: true
+
+Introduction
+========================================================
+
+This presentation is a part of Coursera Developing Data Products course project. 
+This peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+
+- Shiny app (https://dataproducts-soniampub.shinyapps.io/Coursera-DevelopingDataProducts-Project/)
+- Source Code (https://github.com/soniampub/Coursera-DevelopingDataProducts)
+
+Explore mtcars dataset
+========================================================
+
+In this shiny application we are exploring mtcars dataset. We can select various features of a car like, transmission, no of cylinders, distance, displacement etc. Displacement and HoursePower are represented by a slider, Distance as numeric input and transmission as checkboxes.
+You can select various options and it should filter out the result and show only filtered data
+
+
+Data
+========================================================
+The data used in the app comes from the Motor Trend Car Road Tests (mtcars) dataset. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models)
+
+```{r}
+summary(mtcars)
+head(mtcars)
+```
+
+More Plots
+========================================================
+
+```{r, echo=FALSE}
+
+plot(~mpg + cyl, data=mtcars)
+plot(~mpg + am, data=mtcars)
+```
